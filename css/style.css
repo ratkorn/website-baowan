@@ -1,0 +1,23 @@
+/* Custom styles for Boawan Bakery */
+body {
+  background-color: #FFFDF0;
+  color: #4A3728;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #4A3728;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.custom-scroll {
+  scroll-behavior: smooth;
+}

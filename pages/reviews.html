@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รีวิว - Boawan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'boawan-pink': '#FFB7CE',
+            'boawan-pink-dark': '#F080A0',
+            'boawan-cream': '#FFFDF0',
+            'boawan-brown': '#4A3728',
+            'boawan-yellow': '#FFE5B4',
+            'boawan-accent': '#FF7F50',
+          },
+          fontFamily: {
+            'bubbly': ['"Fredoka"', 'sans-serif'],
+            'thai': ['"Mitr"', 'sans-serif'],
+          },
+          borderRadius: {
+            'xl-plus': '2rem',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="font-thai custom-scroll">
+  <!-- Sticky Order Button for Mobile -->
+  <div id="sticky-btn" class="fixed bottom-6 right-6 z-40 transition-all duration-300 transform translate-y-20 opacity-0">
+    <button class="flex items-center space-x-2 bg-boawan-pink text-white px-6 py-4 rounded-full shadow-2xl hover:bg-boawan-pink-dark active:scale-95">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+      </svg>
+      <span class="font-bold">สั่งเลย</span>
+    </button>
+  </div>
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-boawan-cream/80 backdrop-blur-md border-b border-boawan-pink/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2 group cursor-pointer">
+        <div class="w-10 h-10 bg-boawan-pink rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
+          <span class="text-white font-bubbly text-xl font-bold">B</span>
+        </div>
+        <span class="text-2xl font-bubbly font-bold text-boawan-brown tracking-tighter">Boawan</span>
+      </div>
+
+      <div class="hidden md:flex space-x-8 font-medium text-boawan-brown">
+        <a href="../index.html" class="hover:text-boawan-pink-dark transition-colors">Home</a>
+        <a href="menu.html" class="hover:text-boawan-pink-dark transition-colors">เมนูของเรา</a>
+        <a href="about.html" class="hover:text-boawan-pink-dark transition-colors">เกี่ยวกับเรา</a>
+        <a href="reviews.html" class="hover:text-boawan-pink-dark transition-colors border-b-2 border-boawan-pink">รีวิว</a>
+      </div>
+
+      <button class="bg-boawan-brown text-white px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform shadow-md">
+        สั่งเลย
+      </button>
+    </div>
+  </nav>
+
+  <main class="pt-24">
+    <!-- Reviews Section -->
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-boawan-brown mb-2 font-thai">เสียงจากลูกค้า</h2>
+          <p class="text-boawan-pink font-medium">ใครๆ ก็ติดใจในความหวานของเรา</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10 relative">
+            <span class="absolute -top-4 -left-4 w-12 h-12 bg-boawan-yellow rounded-full flex items-center justify-center text-2xl shadow-md">
+              💖
+            </span>
+            <p class="text-boawan-brown/80 mb-6 italic">"หวานตัดขาของจริง แต่หยุดกินไม่ได้เลยค่ะ!"</p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-boawan-pink/20 rounded-full mr-3"></div>
+              <span class="font-bold text-boawan-brown">คุณกิ๊ฟ</span>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10 relative">
+            <span class="absolute -top-4 -left-4 w-12 h-12 bg-boawan-yellow rounded-full flex items-center justify-center text-2xl shadow-md">
+              🍪
+            </span>
+            <p class="text-boawan-brown/80 mb-6 italic">"คุกกี้คือที่สุดของที่สุด! คุ้มราคามาก"</p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-boawan-pink/20 rounded-full mr-3"></div>
+              <span class="font-bold text-boawan-brown">น้องบี</span>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10 relative">
+            <span class="absolute -top-4 -left-4 w-12 h-12 bg-boawan-yellow rounded-full flex items-center justify-center text-2xl shadow-md">
+              🍰
+            </span>
+            <p class="text-boawan-brown/80 mb-6 italic">"ร้านประจำเลยครับ ซื้อฝากใครก็ประทับใจ"</p>
+            <div class="flex items-center">
+              <div class="w-10 h-10 bg-boawan-pink/20 rounded-full mr-3"></div>
+              <span class="font-bold text-boawan-brown">พี่เอก</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Reviews Section -->
+    <section class="py-24 px-6 bg-boawan-cream">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-boawan-brown mb-2 font-thai">รีวิวเพิ่มเติม</h2>
+          <p class="text-boawan-pink font-medium">ความประทับใจจากลูกค้าทั่วประเทศ</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10">
+            <div class="flex items-center mb-4">
+              <div class="flex text-boawan-pink mr-4">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <span class="font-bold text-boawan-brown">คุณมินท์</span>
+            </div>
+            <p class="text-boawan-brown/80">"สั่งเค้กวันเกิดให้แฟน คือดีงามมาก หวานกำลังดี ไม่เลี่ยนเลย แพ็กเกจก็น่ารัก แฟนปลื้มมากค่ะ"</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10">
+            <div class="flex items-center mb-4">
+              <div class="flex text-boawan-pink mr-4">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <span class="font-bold text-boawan-brown">คุณต้น</span>
+            </div>
+            <p class="text-boawan-brown/80">"บราวนี่นี่เข้มข้นจริงๆ หวานมันกำลังดี ห้ามพลาดเลยสำหรับคนชอบของหวาน คือฟินสุดๆ"</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10">
+            <div class="flex items-center mb-4">
+              <div class="flex text-boawan-pink mr-4">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <span class="font-bold text-boawan-brown">คุณฝน</span>
+            </div>
+            <p class="text-boawan-brown/80">"ครัวซองต์เนยแท้ หอมมันกำลังดี ไม่เลี่ยนเลย คือดีต่อใจมาก ต้องสั่งซ้ำแน่นอน"</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl-plus shadow-sm border border-boawan-pink/10">
+            <div class="flex items-center mb-4">
+              <div class="flex text-boawan-pink mr-4">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <span class="font-bold text-boawan-brown">คุณพลอย</span>
+            </div>
+            <p class="text-boawan-brown/80">"สตรอว์เบอร์รี่เค้กนุ่มมาก หวานกำลังดี ไม่เลี่ยนเลย คือดีต่อใจ ต้องสั่งซ้ำแน่นอน"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-boawan-brown mb-2 font-thai">ความประทับใจ</h2>
+          <p class="text-boawan-pink font-medium">จากลูกค้าที่ไว้วางใจ</p>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto">
+          <div class="bg-white p-12 rounded-xl-plus shadow-lg border border-boawan-pink/10 text-center">
+            <div class="flex justify-center mb-6">
+              <div class="flex text-boawan-pink">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <blockquote class="text-xl text-boawan-brown/80 mb-8 italic">
+              "ที่ Boawan ไม่ได้ขายแค่ของหวาน แต่ขายความสุข ทุกคำที่กัดคือความฟินที่ส่งตรงถึงหัวใจ ขอบคุณที่ทำให้ทุกวันของเรามีความหวาน"
+            </blockquote>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-boawan-pink/20 rounded-full mr-4"></div>
+              <div>
+                <p class="font-bold text-boawan-brown">คุณแพร</p>
+                <p class="text-sm text-boawan-brown/60">ลูกค้าประจำ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-boawan-brown text-boawan-cream py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-2 mb-6">
+            <div class="w-10 h-10 bg-boawan-pink rounded-full flex items-center justify-center">
+              <span class="text-white font-bubbly text-xl font-bold">B</span>
+            </div>
+            <span class="text-2xl font-bubbly font-bold tracking-tighter">Boawan</span>
+          </div>
+          <p class="text-boawan-cream/60 max-w-sm mb-6">
+            เบเกอรี่สมัยใหม่ที่เน้นความหวานแบบจัดเต็ม พร้อมวัตถุดิบคุณภาพพรีเมียม
+            เพื่อให้ทุกคำของคุณคือช่วงเวลาแห่งความสุข
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-boawan-cream/10 rounded-full flex items-center justify-center hover:bg-boawan-pink transition-colors">
+              <i class="fab fa-facebook-f">FB</i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-boawan-cream/10 rounded-full flex items-center justify-center hover:bg-boawan-pink transition-colors">
+              <i class="fab fa-instagram">IG</i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-boawan-cream/10 rounded-full flex items-center justify-center hover:bg-boawan-pink transition-colors">
+              <i class="fab fa-line">LN</i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-6">ลิงก์แนะนำ</h4>
+          <ul class="space-y-4 text-boawan-cream/60">
+            <li><a href="menu.html" class="hover:text-boawan-pink transition-colors">เมนูยอดฮิต</a></li>
+            <li><a href="about.html" class="hover:text-boawan-pink transition-colors">เรื่องราวของเรา</a></li>
+            <li><a href="#" class="hover:text-boawan-pink transition-colors">แฟรนไชส์</a></li>
+            <li><a href="#" class="hover:text-boawan-pink transition-colors">นโยบายความเป็นส่วนตัว</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-6">ติดต่อเรา</h4>
+          <ul class="space-y-4 text-boawan-cream/60 text-sm">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+              123 ถ.สุขุมวิท กรุงเทพฯ 10110
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              02-123-4567
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              hello@boawan.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-boawan-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center text-boawan-cream/40 text-xs">
+        <p>© 2024 Boawan Bakery. All Rights Reserved.</p>
+        <p class="mt-4 md:mt-0 font-thai">หวานตัดขา... เพราะความหวานคือชีวิต</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
