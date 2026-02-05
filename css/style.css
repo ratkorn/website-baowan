@@ -24,7 +24,25 @@ body {
 
 /* Preload Animation Styles */
 .preload-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFDF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
   transition: opacity 0.5s ease-out;
+}
+.preload-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .preload-logo {
@@ -33,9 +51,8 @@ body {
   stroke-width: 1;
   stroke-dasharray: 640;
   stroke-dashoffset: 640;
-  animation: textAnimation 2s ease-in-out forwards, fill-animation 2.5s ease-in-out forwards;
+   animation: textAnimation 3s ease-in-out forwards, fill-animation 4s ease-in-out forwards;
 }
-
 @keyframes fill-animation {
   0% {
     fill: transparent;
@@ -57,13 +74,26 @@ body {
   }
 }
 
-.preload-text {
+.hide-content {
+  display: none;
+}
+.hide-preload {
   opacity: 0;
-  animation: fadeInText 1s ease-in-out 2s forwards;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out;
+}
+/* Hide navigation during preload animation */
+main.preload-active {
+ display: none;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-@keyframes fadeInText {
-  to {
-    opacity: 1;
-  }
+/* Show navigation when preload is complete */
+main:not(.preload-active){
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  transition: opacity 0.5s ease-out;
+  
 }

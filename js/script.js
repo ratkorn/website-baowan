@@ -1,24 +1,27 @@
 // Preload functionality with session storage
 document.addEventListener('DOMContentLoaded', function() {
   const preloadOverlay = document.getElementById('preload-overlay');
-
-  // Check if user has visited before using session storage
+  const aContent = document.getElementById('a-content');
+    // Check if user has visited before using session storage
   const hasVisited = sessionStorage.getItem('hasVisited');
-
   if (hasVisited) {
     // If user has visited before, hide the preload immediately
     preloadOverlay.style.display = 'none';
+    aContent.style.display = 'block';
+    
+   
   } else {
     // If first visit, show preload and set session storage after animation completes
     setTimeout(function() {
-      sessionStorage.setItem('hasVisited', 'true');
-      preloadOverlay.style.opacity = '0';
 
-      // Hide the preload overlay after fade out animation completes
+      preloadOverlay.style.display = 'block';
+      sessionStorage.setItem('hasVisited', 'true');
       setTimeout(function() {
         preloadOverlay.style.display = 'none';
+        aContent.style.display = 'block';
       }, 500); // Match the CSS transition duration
-    }, 3000); // Show for 3 seconds (adjust as needed)
+      // Hide the preload overlay after fade out animation completed
+    }, 5000); // Show for 5 seconds (adjust as needed)
   }
 });
 
