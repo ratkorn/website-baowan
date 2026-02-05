@@ -21,3 +21,49 @@ body {
 .custom-scroll {
   scroll-behavior: smooth;
 }
+
+/* Preload Animation Styles */
+.preload-overlay {
+  transition: opacity 0.5s ease-out;
+}
+
+.preload-logo {
+  fill: transparent;
+  stroke: #FFB7CE;
+  stroke-width: 1;
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
+  animation: textAnimation 2s ease-in-out forwards, fill-animation 2.5s ease-in-out forwards;
+}
+
+@keyframes fill-animation {
+  0% {
+    fill: transparent;
+  }
+  60% {
+    fill: transparent;
+  }
+  100% {
+    fill: #FFB7CE;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.preload-text {
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out 2s forwards;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
